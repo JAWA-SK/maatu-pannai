@@ -1,0 +1,176 @@
+.form > input {
+  border: none;
+  border-radius: 5px;
+  pointer-events: auto;
+  outline: none;
+  font-family: monospace;
+  font-weight: bold;
+  background-color: rgb(242, 231, 233);
+  width: 150px;
+  padding: 8px;
+}
+.form > select {
+  border: none;
+  border-radius: 5px;
+  pointer-events: auto;
+  outline: none;
+  font-family: monospace;
+  font-weight: bold;
+  background-color: rgb(242, 231, 233);
+  width: 150px;
+  padding: 8px;
+  cursor: pointer;
+}
+.form > select:hover {
+  color: brown;
+  cursor: pointer;
+}
+.form > input:focus {
+  background-color: wheat;
+}
+.form > label {
+  margin-right: 2%;
+  font-family: "Times New Roman", Times, serif;
+  font-size: 15px;
+  font-weight: bold;
+  color: rgb(60, 34, 34);
+}
+
+.form {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2px;
+  justify-content: space-evenly;
+}
+.rowWise {
+  display: flex;
+  margin-top: 2%;
+  margin-bottom: 1%;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+}
+.buttonForm
+{
+  display: flex;
+  justify-content:space-evenly;
+  margin-left: 20px;
+}
+.addMore,
+.remove {
+  background-color: rgb(60, 34, 34);
+  color: white;
+  font-weight: bolder;
+  box-shadow: 5%;
+  border-radius: 5px;
+  outline: none;
+  font-family: "Times New Roman", Times, serif;
+  border: none;
+  margin-top:10px ;
+  margin-left: 10px;
+  padding: 8px 12px;
+  font-size: 12px;
+  cursor: pointer;
+}
+
+.addMore:hover,
+.remove:hover {
+  color: rgb(60, 34, 34);
+  font-weight: bolder;
+  font-family: "Times New Roman", Times, serif;
+  background-color: rgb(245, 200, 146);
+  transition: 0.2s color ease;
+}
+
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px grey;
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgb(91, 75, 75);
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: rgb(107, 90, 93);
+}
+
+.payButton {
+  background-color: #c2fbd7;
+  border-radius: 5px;
+  box-shadow: rgba(44, 187, 99, 0.2) 0 -25px 18px -14px inset,
+    rgba(44, 187, 99, 0.15) 0 1px 2px, rgba(44, 187, 99, 0.15) 0 2px 4px,
+    rgba(44, 187, 99, 0.15) 0 4px 8px, rgba(44, 187, 99, 0.15) 0 8px 16px,
+    rgba(44, 187, 99, 0.15) 0 16px 32px;
+  color: rgb(0, 0, 0);
+  cursor: pointer;
+  font-family: "Times New Roman", Times, serif;
+  padding: 8px 12px;
+  text-align: center;
+  margin-top: 17%;
+  height: 6vh;
+  width: 100px;
+  text-decoration: none;
+  transition: all 250ms;
+  border: 0;
+  font-weight: bold;
+  font-size: 12px;
+}
+
+.payButton:hover {
+  box-shadow: rgba(44, 187, 99, 0.35) 0 -25px 18px -14px inset,
+    rgba(44, 187, 99, 0.25) 0 1px 2px, rgba(44, 187, 99, 0.25) 0 2px 4px,
+    rgba(44, 187, 99, 0.25) 0 4px 8px, rgba(44, 187, 99, 0.25) 0 8px 16px,
+    rgba(44, 187, 99, 0.25) 0 16px 32px;
+  transform: scale(1.05) rotate(-1deg);
+}
+
+.payButton.paid {
+  background-color: #ff7070;
+  box-shadow: rgba(255, 112, 112, 0.2) 0 -25px 18px -14px inset,
+    rgba(255, 112, 112, 0.15) 0 1px 2px, rgba(255, 112, 112, 0.15) 0 2px 4px,
+    rgba(255, 112, 112, 0.15) 0 4px 8px, rgba(255, 112, 112, 0.15) 0 8px 16px,
+    rgba(255, 112, 112, 0.15) 0 16px 32px;
+  color: rgb(0, 0, 0);
+}
+
+.form-container {
+  position: relative;
+  overflow: hidden;
+}
+
+.running-text {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 20px;
+  background-color: transparent;
+  white-space: nowrap;
+  font-family: "Times New Roman", Times, serif;
+  font-weight: lighter;
+  color: #5b1a1aec;
+  font-size: 15px;
+  overflow: hidden;
+  margin: 0;
+  animation: runningText 10s linear infinite;
+}
+
+@keyframes runningText {
+  100% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(100%);
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .insideForm {
+    flex-direction: column;
+  }
+}

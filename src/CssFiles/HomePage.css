@@ -1,0 +1,300 @@
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  max-width: 100%;
+  background-image: url("background2.jpg");
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+}
+
+.horizontalLine {
+  font-size: 12px;
+  background-color: #262626;
+  height: 60px;
+  margin-bottom: 1px;
+  position: fixed;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  top: 0;
+}
+
+.logoImage {
+  height: 13vh;
+  margin: 2% 0 0 0%;
+}
+
+.headerInPage {
+  font-size: 20px;
+  color: rgb(188, 183, 183);
+  font-family: "Times New Roman", Times, serif;
+  margin-top: 14%;
+  margin-left: 0%;
+  margin-right: 2%;
+  width: auto;
+}
+
+.googleLogin {
+  margin-top: 1%;
+  cursor: pointer;
+}
+
+.logo {
+  width: 11%;
+  border: 0;
+  height: 10vh;
+  padding: 0;
+  display: flex;
+  margin: 0;
+}
+
+.NavigationBar {
+  background-color: rgb(247, 242, 234);
+  justify-content: space-evenly;
+  margin-right: 25%;
+  margin-top: 8%;
+  margin-left: 20%;
+  margin-bottom: 6%;
+  font-weight: bold;
+  padding: 1%;
+  border-radius: 50px;
+  display: flex;
+  font-size: 15px;
+  transition: 0.4s ease-in;
+  font-family: "Times New Roman", Times, serif;
+  width: auto;
+  display: flex;
+  z-index: 10;
+}
+
+.NavigationBar > div:hover {
+  color: rgb(127, 97, 62);
+  transition: color 0.3s ease;
+  cursor: pointer;
+}
+
+.NavigationBar > div {
+  margin-top: 3%;
+}
+
+.smallText {
+  color: rgb(60, 34, 34);
+  font-size: 20px;
+  font-weight: bold;
+  margin-left: 5.5%;
+  margin-top: 7%;
+  text-transform: uppercase;
+  line-height: 18px;
+  letter-spacing: 3px;
+}
+
+.dairy {
+  color: rgb(245, 200, 146);
+}
+
+.largeText {
+  color: rgb(60, 34, 34);
+  font-weight: bold;
+  font-family: "Oregon";
+  font-size: 45px;
+  margin-left: 5%;
+  line-height: 18px;
+  letter-spacing: 0px;
+  margin-bottom: 1%;
+}
+
+.sticky {
+  margin-right: 0%;
+  margin-top: 60px;
+  margin-left: 60%;
+  margin-bottom: 6%;
+  padding: 0.5%;
+  border-radius: 0px;
+  font-size: 15px;
+  transition: 0.5s cubic-bezier(0.165, 0.84, 0.44, 1);
+  font-family: "Times New Roman", Times, serif;
+  width: 39%;
+  position: fixed;
+  top: 0;
+  display: flex;
+}
+
+.card {
+  padding: 2%;
+  margin-left: 5%;
+  margin-top: 15%;
+  background-color: rgb(249, 225, 187);
+  width: 10%;
+  height: auto;
+  box-shadow: 0px 3px 3px 0px rgb(0, 0, 0);
+  border-radius: 10px;
+  cursor: pointer;
+  transition: 1000ms;
+}
+
+.cardContainer {
+  display: flex;
+  margin-top: 0;
+}
+
+.textCard {
+  font-family: "Oregon";
+  font-size: 20px;
+  font-weight: bold;
+  text-align: center;
+}
+
+.cardImage {
+  height: 7vh;
+  margin-left: 30%;
+}
+
+.card:hover,
+.card:focus-visible {
+  color: rgb(249, 225, 187);
+  background-color: rgb(62, 41, 41);
+  transform: translateY(-0.5rem);
+  transition: transform 250ms;
+}
+
+.Toastify__toast--success {
+  background: rgb(67, 41, 41) !important;
+}
+
+.Toastify__toast--error {
+  background: rgb(67, 41, 41) !important;
+}
+
+@media (max-width: 1200px) {
+  .logoImage {
+    height: 10vh;
+  }
+
+  .headerInPage {
+    font-size: 18px;
+    margin-top: 10%;
+  }
+
+  .NavigationBar {
+    margin-right: 15%;
+    margin-left: 10%;
+    font-size: 14px;
+  }
+
+  .sticky {
+    margin-left: 49%;
+    width: 50%;
+  }
+
+  .largeText {
+    font-size: 35px;
+  }
+
+  .smallText {
+    font-size: 18px;
+  }
+}
+
+@media (max-width: 768px) {
+  .logoImage {
+    height: 8vh;
+  }
+
+  .headerInPage {
+    font-size: 16px;
+    margin-top: 10%;
+  }
+
+  .NavigationBar {
+    margin-right: 10%;
+    margin-left: 5%;
+    font-size: 8px;
+  }
+
+  .sticky {
+    margin-left: 69%;
+    width: 30%;
+  }
+
+  .cardContainer {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .card {
+    width: 30%;
+    margin: 2%;
+  }
+
+  .cardImage {
+    height: 5vh;
+    margin-left: 25%;
+  }
+
+  .largeText {
+    font-size: 30px;
+    margin-left: 2%;
+  }
+
+  .smallText {
+    font-size: 16px;
+    margin-left: 3%;
+  }
+}
+@media (max-width: 415px)
+{
+  .logoImage {
+    height: 4vh;
+  }
+
+  .headerInPage {
+    font-size: 10px;
+    margin-top: 10%;
+  }
+
+  .NavigationBar {
+    margin-right: 10%;
+    margin-left: 5%;
+    font-size: 6px;
+  }
+
+  .sticky {
+    margin-left: 69%;
+    width: 30%;
+  }
+
+  .cardContainer {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .card {
+    width: 15%;
+    margin: 2%;
+  }
+
+  .cardImage {
+    height: 5vh;
+    margin-left: 25%;
+  }
+
+  .textCard {
+  font-family: "Oregon";
+  font-size: 10px;
+  font-weight: bold;
+  text-align: center;
+}
+  .largeText {
+    font-size: 20px;
+    margin-left: 1%;
+  }
+
+  .smallText {
+    font-size: 13px;
+    margin-left: 2%;
+  }
+}

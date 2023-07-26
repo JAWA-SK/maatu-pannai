@@ -1,0 +1,67 @@
+.commentBox {
+  width: 817px; 
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+
+.insideCommentBox {
+  height: 50vh;
+  background-color: white;
+}
+
+.inputComment {
+   background-color: rgba(233, 220, 208, 0.578);
+  height: 40vh;
+  width: 770px;
+  margin: 1.5% 2.5% 0% 2.6%;
+  outline: 1px solid black;
+  font-size: 19px;
+  resize: none;
+  text-transform: capitalize;
+  font-family: monospace;
+  padding: 10px 0 0 10px;
+}
+
+.buttonCover
+{
+  display: flex;
+  gap:10px;
+  margin-top: 2.8px;
+}
+.feedButton {
+  display: flex;
+  margin-top: 0.5%; 
+  width: fit-content;
+  cursor: pointer;
+  color: rgb(255, 255, 255);
+  background-color: rgb(60, 34, 34);
+  border-radius: 2px;
+  border: none;
+  padding: 5px;
+  font-weight: bold;
+}
+
+.feedButton:hover {
+  color: rgb(60, 34, 34);
+  background-color: rgb(249, 225, 187);
+  font-weight: bold;
+  transition: 0.4s ease;
+}
+
+.eatingGrass {
+  width: 30%; 
+  opacity: 0.3;
+  position: absolute;
+  -webkit-user-drag: none;
+}
+
+.yummy {
+  width: 20%;
+}
+
+.yummyCover {
+  display: flex;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}

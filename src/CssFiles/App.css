@@ -1,0 +1,34 @@
+.wrapper {
+  display: flex;
+  gap: 815px;
+}
+.googleLogin {
+  margin: 0 0 0 0;
+}
+.signOut {
+  background-color: rgb(4, 45, 81);
+  display: flex;
+  font-weight: bold;
+  border-radius: 10px;
+  border-width: 0;
+  position: relative;
+  color: #ffffff;
+  cursor: pointer;
+  font-size: 16px;
+  height: 44px;
+  margin: 10px 0 0 80px;
+  outline: none;
+  overflow: hidden;
+  padding: 0 15px;
+  text-align: center;
+  text-transform: capitalize;
+  transform: translateZ(0);
+  transition: all 0.2s, box-shadow 0.08s ease-in;
+  width: fit-content;
+}
+
+.signOut:hover
+{
+    background-color:black;
+    transform: .2s ease;
+}

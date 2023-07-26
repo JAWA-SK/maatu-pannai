@@ -1,0 +1,77 @@
+.mail {
+  width: 817px;
+  background-color: rgba(240, 248, 255, 0.708);
+  height: 50vh;
+}
+.tellUs {
+  margin: 0;
+  text-align: center;
+  font-family: "Times New Roman", Times, serif;
+  font-weight: bold;
+  color: rgb(85, 49, 8);
+}
+.wrapperMail {
+  display: flex;
+  justify-content: space-evenly;
+  margin: 10px 0px 15px 0px;
+  border-radius: 50px;
+}
+.insideWrapperMail > input {
+  border-radius: 10px;
+  border: 1px solid black;
+  padding: 1vw 0.2vw;
+  width: auto;
+  font-family: monospace;
+  outline: none;
+  background-color: rgba(220, 206, 193, 0.592);
+}
+.insideWrapperMail > input:focus {
+  background-color: rgb(175, 214, 248);
+}
+.insideWrapperMail > input:hover {
+  transform: scale(1.1);
+  transition: 0.1s ease;
+}
+.sendButtonCover
+{
+  display: flex;
+  gap:20px
+}
+.textArea {
+  resize: none;
+  padding: 2px 10px;
+  width: 630px;
+  height: 25vh;
+  outline: none;
+  border-radius: 10px;
+  background-color: rgba(220, 206, 193, 0.592);
+}
+.textArea:focus {
+  background-color: rgb(175, 214, 248);
+}
+.textAreaCover {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+.sendButton {
+  padding: 5px 5px;
+  margin-top: 2px;
+  width: auto;
+  border-radius: 5px;
+  outline: none;
+  border: 1px solid black;
+  color: rgb(255, 255, 255);
+  background-color: rgb(65, 22, 29);
+  font-weight: bold;
+  cursor: pointer;
+  text-transform: capitalize;
+}
+.sendButton:hover {
+  background-color: rgb(249, 225, 187);
+  color: rgb(65, 22, 29);
+  transition: 0.4s ease;
+}
+.backgroundWrap {
+  background-color: aliceblue;
+}

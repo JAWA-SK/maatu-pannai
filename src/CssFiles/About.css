@@ -1,0 +1,52 @@
+.AboutNavigationBar {
+  background-color: rgb(247, 242, 234);
+  justify-content: space-around;
+  margin-top: 4.7%;
+  margin-bottom: 6%;
+  padding: 0.5%;
+  display: flex;
+  font-weight: bold;
+  font-size: 15px;
+  transition: 0.4s ease-in;
+  font-family: "Times New Roman", Times, serif;
+  width: auto;
+}
+
+.AboutNavigationBar > div {
+  margin-top: 0.6%;
+}
+
+.AboutNavigationBar > div:hover {
+  color: rgb(245, 200, 146);
+  transition: color 0.3s ease;
+  cursor: pointer;
+}
+
+.formRow {
+  height: 50vh;
+  background-color: rgba(225, 208, 208, 0.723);
+  width: 817px;
+  margin-left: 7%;
+  position: absolute;
+  border-radius: 5px;
+  overflow-y: auto;
+}
+
+@media only screen and (max-width: 868px) {
+  .AboutNavigationBar {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1200px) {
+  .AboutNavigationBar {
+    font-size: 13px;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  .AboutNavigationBar {
+    font-size: 16px;
+  }
+}
