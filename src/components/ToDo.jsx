@@ -4,6 +4,7 @@ import Form from "./Form";
 import Feedback from "./Feedback";
 import "../CssFiles/ToDo.css";
 import MailUs from "./MailUs";
+import Cart from "./Cart";
 
 const SelectedIdContext = createContext();
 export function useSelectedId() {
@@ -24,6 +25,10 @@ function ToDo() {
   const feedback = () => {
     return <Feedback />;
   };
+  const cart = () =>
+  {
+    return <Cart />;
+    }
   let array = [
     {
       id: 1,
@@ -41,6 +46,10 @@ function ToDo() {
       id: 4,
       component: mailUs,
     },
+    {
+      id: 5,
+      component:cart,
+    }
   ];
 
   return (
@@ -70,7 +79,7 @@ function ToDo() {
             <div className="cardToDo" onClick={() => setSelectedId(3)}>
               <div className="textCardToDo">Feedback</div>
             </div>
-            <div className="cardToDo" onClick={() => setSelectedId(2)}>
+            <div className="cardToDo" onClick={() => setSelectedId(5)}>
               <div className="textCardToDo">Your Cart</div>
             </div>
           </div>

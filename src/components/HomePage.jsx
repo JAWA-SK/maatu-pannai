@@ -111,11 +111,11 @@ function HomePage() {
       </Button>
       <div className="cardContainer">
         <div className="card">
-          <img className="cardImage" src="public/curd.png"></img>
+          <img className="cardImage" src="public/Curd.png"></img>
           <div className="textCard">Fresh Curd</div>
         </div>
         <div className="card">
-          <img className="cardImage" src="public/milk.png"></img>
+          <img className="cardImage" src="public/Milk.png"></img>
           <div className="textCard">Pure Milk</div>
         </div>
         <div className="card">
@@ -123,11 +123,11 @@ function HomePage() {
           <div className="textCard">Smooth Butter</div>
         </div>
         <div className="card">
-          <img className="cardImage" src="public/ghee.png"></img>
+          <img className="cardImage" src="public/Ghee.png"></img>
           <div className="textCard">Home-made Ghee</div>
         </div>
         <div className="card">
-          <img className="cardImage" src="public/cheese.png"></img>
+          <img className="cardImage" src="public/Panner.png"></img>
           <div className="textCard">Delicious Paneer</div>
         </div>
       </div>

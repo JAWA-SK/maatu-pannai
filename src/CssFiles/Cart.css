@@ -1,0 +1,83 @@
+.leftPortion
+{
+    width: 75%;
+    background-color:rgba(245, 222, 179, 0.618)
+}
+.outerPortion
+{
+    display: flex;
+    min-height: 50vh;
+    overflow-y: auto;
+   
+}
+.rightPortion
+{
+    font-size: 15px;
+    font-weight: bold;
+    position: fixed;
+    background-color: rgb(5, 5, 5);
+    outline: 1px solid black;
+    border-radius: 5px;
+    height: 50vh;
+    width: 15.6%;
+    left:54.5%
+}
+.innerPortion
+{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    margin-top:2%;
+    margin-bottom: 2%;
+
+}
+.items
+{
+    background-color: rgb(143, 139, 139);
+    color: rgba(255, 255, 255, 0.905);
+    padding: 1.6%;
+    min-width: 17%;
+    border-radius: 5px;
+    font-weight: bold;
+    display: flex;
+    text-transform: capitalize;
+    font-family: monospace;
+    align-items: center;
+    justify-content: flex-start;
+    gap:3px;
+}
+.cartImage
+{
+    height: 4vh;
+    margin: 0;
+}
+.quantityButtons
+{
+    color: rgb(0, 0, 0);
+    background-color:rgb(228, 194, 131);
+    outline: none;
+    border: none;
+    font-weight: bold;
+    border-radius: 2px;
+    cursor: pointer;
+    width: 40px;
+    
+}
+.quantityButtons:hover
+{
+  transform: scale(1.04);
+}
+.quantityButtonsCover
+{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    justify-content: center;
+}
+.quantityCounter
+{
+    font-family: monospace;
+    font-weight: bold;
+    font-size: 15px;
+    color:rgb(85, 18, 18)
+}

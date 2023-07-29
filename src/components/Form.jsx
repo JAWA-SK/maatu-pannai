@@ -1,23 +1,33 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import "../CssFiles/Form.css";
 import { v4 as uuidv4 } from "uuid";
 
 function Form() {
   let rate = "31";
-  const [input, setInput] = useState([
-    { id: uuidv4(), product: "", litres: "", lineage: "", paid: false },
-  ]);
+
+  const initialInput = JSON.parse(localStorage.getItem("cart")) || [
+    { id: uuidv4(), product: "Milk", litres: "", lineage: "Gir Cow", paid: false },
+  ];
+
+  const [input, setInput] = useState(initialInput);
 
   const handleChange = () => {
     setInput([
       ...input,
-      { id: uuidv4(), product: "", litres: "", lineage: "", paid: false },
+      {
+        id: uuidv4(),
+        product: "Milk",
+        litres: "",
+        lineage: "Gir Cow",
+        paid: false,
+      },
     ]);
   };
 
   const handleRemoveChange = (id) => {
     const list = input.filter((item) => item.id !== id);
     setInput(list);
+    localStorage.setItem("cart", JSON.stringify(list));
   };
 
   const handleInputChange = (e, id) => {
@@ -35,13 +45,17 @@ function Form() {
     setInput((prevState) => {
       return prevState.map((item) => {
         if (item.id === id) {
-          return { ...item, paid: !item.paid };
+          const newItem = { ...item, paid: !item.paid };
+          localStorage.setItem("cart", JSON.stringify(prevState));
+          return newItem;
         }
         return item;
       });
     });
   };
-
+  useEffect(() => {
+    localStorage.setItem("cart", JSON.stringify(input));
+  }, [input]);
   return (
     <div className="form-container">
       <div className="running-text">
@@ -52,7 +66,7 @@ function Form() {
           <div className="rowWise" key={id}>
             <div className="form">
               <label>Products:</label>
-              <select name="name" className="formControl">
+              <select name="product" className="formControl" value={product} onChange={(e)=>handleInputChange(e,id)}>
                 <option value={"Milk"}>Milk</option>
                 <option value={"Curd"}>Curd</option>
                 <option value={"Ghee"}>Ghee</option>
@@ -62,12 +76,12 @@ function Form() {
             </div>
             <div className="form">
               <label>Lineage:</label>
-              <select name="lineage">
-                <option value={"gir"}>Gir Cow</option>
-                <option value={"sahiwal"}>Sahiwal Cow</option>
-                <option value={"red_sindhi"}>Red Sindhi Cow</option>
-                <option value={"tharparkar"}>Tharparkar Cow</option>
-                <option value={"murrah"}>Murrah Cow</option>
+              <select name="lineage" className="formControl" value={lineage} onChange={(e)=>handleInputChange(e,id)}>
+                <option value={"Gir"}>Gir</option>
+                <option value={"Sahiwal"}>Sahiwal</option>
+                <option value={"Red Sindhi"}>Red Sindhi</option>
+                <option value={"Tharparkar"}>Tharparkar</option>
+                <option value={"Murrah"}>Murrah</option>
               </select>
             </div>
             <div className="form">
